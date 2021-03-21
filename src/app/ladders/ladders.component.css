@@ -1,0 +1,15 @@
+a {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+table {
+  width: 80%;
+  margin-left: 7%;
+}
+.solved {
+  background-color: #175802;
+}
