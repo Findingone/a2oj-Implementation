@@ -1,3 +1,13 @@
+<div class="mat-elevation-z8" id="top-bar">
+    <table>
+        <tr>
+            <td id="home"><a [routerLink]="['/']">Home</a> </td>
+            <td id="button">{{solverFinder.handle}} &nbsp;&nbsp;&nbsp;<button mat-raised-button
+                    (click)="openDialog()">Somebody else</button>
+            </td>
+        </tr>
+    </table>
+</div>
 <div id='outer-container'>
     <router-outlet></router-outlet>
 </div>

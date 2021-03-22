@@ -6,13 +6,18 @@ import { AppComponent } from './app.component';
 import { LaddersComponent } from './ladders/ladders.component';
 import { HomeComponent } from './home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatTableModule } from '@angular/material/table'
-
+import { MatTableModule } from '@angular/material/table';
+import { MatButtonModule } from '@angular/material/button';
+import { MatDialogModule } from '@angular/material/dialog';
+import { usernameDialog } from './app.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { FormsModule } from '@angular/forms';
+import { MatInputModule } from '@angular/material/input';
 @NgModule({
   declarations: [
     AppComponent,
     LaddersComponent,
-    HomeComponent
+    HomeComponent, usernameDialog
   ],
   imports: [
     BrowserModule,
@@ -20,6 +25,11 @@ import { MatTableModule } from '@angular/material/table'
     BrowserAnimationsModule,
     MatTableModule,
     HttpClientModule,
+    MatButtonModule,
+    MatDialogModule,
+    MatFormFieldModule,
+    FormsModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -8,8 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
 
   constructor() { }
-
+  displayedColumns = ['links']
+  dataSource = []
   ngOnInit(): void {
+    for (var i = 11; i < 33; i++) { this.dataSource.push(i) }
   }
 
 }

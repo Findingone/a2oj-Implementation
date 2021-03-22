@@ -36,7 +36,6 @@ export class LaddersComponent implements OnInit {
           }
         }
         this.addToList();
-
       });
   }
 

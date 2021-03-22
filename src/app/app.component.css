@@ -1,3 +1,24 @@
 #outer-container {
   margin: 10px;
 }
+#top-bar {
+  background-color: #424242;
+  padding: 10px;
+  color: white;
+  height: 40px;
+}
+table {
+  width: 100%;
+}
+#home {
+  position: relative;
+  top: 8px;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+#button {
+  position: absolute;
+  right: 10px;
+}
