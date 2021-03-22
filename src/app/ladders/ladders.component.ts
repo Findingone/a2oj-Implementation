@@ -14,12 +14,16 @@ export class LaddersComponent implements OnInit {
   displayedColumns = ["id", 'name', 'difficulty']
   selectedLadder = [];
   dataSource = [];
-
+  handle: string;
   solvedQuestions = []
   ngOnInit(): void {
     this.router.queryParams.subscribe(params => {
       this.number = params['number'];
+      this.handle = params['handle'];
     })
+    if (this.handle) {
+      this.solvedFinderService.handle = this.handle;
+    }
     this.selectedLadder = ladder[this.number - 11];
     this.dataSource = this.selectedLadder;
     this.findSolved()

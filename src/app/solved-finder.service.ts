@@ -13,6 +13,8 @@ export class SolvedFinderService {
   apiUrl = 'https://codeforces.com/api/user.status?handle=' + this.handle + '&from=1';
 
   getConfig() {
+    this.apiUrl = 'https://codeforces.com/api/user.status?handle=' + this.handle + '&from=1';
+    console.log(this.apiUrl)
     return this.http.get(this.apiUrl);
   }
 }
